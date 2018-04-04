@@ -1,9 +1,7 @@
-var express = require('express');
-var app = express();
+const express = require('express')
+const app = express()
 
-app.get('/',function(req,res) {
-  res.send("Hello World - is Jenkins(2) working?");
-});
+app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(4000);
+app.listen(4000, () => console.log('Example app listening on port 4000!'))
 
